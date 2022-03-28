@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex LaunchX</title>
+    <link rel="icon" href="../Recursos/Pokeball.png">
+    <link rel="stylesheet" href="./Pokedex.css">
+    
+</head>
+<body>
+    <!--Barra superior con logo Pokémon-->
+    <section class="Barra-sup">
+        <div>
+            <div><a href="./Pokedex.html"><img src="../Recursos/Pokémon.png" alt="Pokémon Logo" class="Logo-Pokemon"></a></div>
+        </div>
+    </section><br><br>
+    <!--Cuerpo Pokedex-->
+    <section class="body-pokedex"> 
+        <div class="Pokedex">
+            <div class="cont-Pokedex">
+                <!--Barra de búsqueda-->
+                <div class="cont-searcher"> 
+                    <div class="searcher-icon">
+                        <input type="text" placeholder="Pokémon / ID" id="pokeName" name="pokeName" class="Searcher" autocomplete="off">
+                        <button onclick="fetchPokemon()" class="Pokeball"> <img src="../Recursos/Pokeball.png" alt="Search" width="20px"> </button>
+                    </div>
+                </div><br><br>
+                <!--Imagen y flechas de navegación-->
+                <div class="cont-central">
+                    <div><button class="Caret"><img src="../Recursos/Caret-left.svg" alt="Back"></button></div>
+                    <div class="photo-poke"><img src="../Recursos/Pokeball Blue Search.png" alt="Pokemon" id="pokemonImg" width="100px"></div>
+                    <div><button class="Caret"><img src="../Recursos/Caret-right.svg" alt="Next"></button></div>
+                </div> 
+                <!--Información principal Pokemon-->
+                <div class="main">
+                    <div class="inf-main-poke"> <h1><span id="pokemonID"></span> <span id="pokemonName"></span></h1> </div><br><br><br>
+                    <ul id="pokemonType"></ul><br>
+                </div>
+                <div class="buttons-Info">
+                    <button onclick="" class="BUTTON_HABS"> <img src="../Recursos/Chart-Hab.svg" alt="Stadistics"> </button>
+                    <button onclick="" class="BUTTON_HABS"> <img src="../Recursos/Moves.svg" alt="Moves"> </button>
+                </div>
+                <div class="Habilidades">
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+<footer>
+    <script src="./Pokedex.js"></script>
+</footer>
+</html>
+
